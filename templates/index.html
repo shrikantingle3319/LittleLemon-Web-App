@@ -1,0 +1,147 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Little Lemon Restaurant</title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'css/style.css' %}"
+    >
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <h1>🍋 Little Lemon</h1>
+
+            <nav>
+                <a href="/">Home</a>
+                <a href="/api/menu-items/">Menu API</a>
+                <a href="/api/bookings/">Bookings API</a>
+                <a href="/auth/users/">Authentication</a>
+                <a href="/admin/">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <div class="container">
+
+                <p class="eyebrow">
+                    Mediterranean Restaurant
+                </p>
+
+                <h2>
+                    Fresh food.
+                    Warm hospitality.
+                    Little Lemon.
+                </h2>
+
+                <p>
+                    Welcome to Little Lemon, where delicious
+                    Mediterranean-inspired dishes meet a
+                    modern dining experience.
+                </p>
+
+                <div class="buttons">
+
+                    <a
+                        class="button"
+                        href="/api/menu-items/"
+                    >
+                        View Menu
+                    </a>
+
+                    <a
+                        class="button secondary"
+                        href="/api/bookings/"
+                    >
+                        Book a Table
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="features">
+
+            <div class="container grid">
+
+                <article class="card">
+                    <h3>🍽️ Menu</h3>
+
+                    <p>
+                        Browse our restaurant menu
+                        through the REST API.
+                    </p>
+
+                    <a href="/api/menu-items/">
+                        Explore menu →
+                    </a>
+                </article>
+
+
+                <article class="card">
+                    <h3>📅 Reservations</h3>
+
+                    <p>
+                        Authenticated customers can
+                        create and manage table bookings.
+                    </p>
+
+                    <a href="/api/bookings/">
+                        Manage bookings →
+                    </a>
+                </article>
+
+
+                <article class="card">
+                    <h3>🔐 Authentication</h3>
+
+                    <p>
+                        Register users and authenticate
+                        API requests using tokens.
+                    </p>
+
+                    <a href="/auth/users/">
+                        User authentication →
+                    </a>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                © 2026 Little Lemon Restaurant
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
